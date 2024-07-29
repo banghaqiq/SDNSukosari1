@@ -1,0 +1,368 @@
+{% extends "layout/core.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+   <!-- Page Header Start -->
+   <div
+   class="container-fluid page-header py-5 mb-5 wow fadeIn"
+   data-wow-delay="0.1s">
+   <div class="container text-center py-5">
+     <h1 class="display-2 text-white mb-4 animated slideInDown fw-medium">Profile</h1>
+     <nav aria-label="breadcrumb animated slideInDown">
+       <ol class="breadcrumb justify-content-center mb-0">
+         <li class="breadcrumb-item"><a href="{% url 'home' %}" style="text-decoration: none;color:gray !important">Home</a></li>
+         <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+         <li class="breadcrumb-item text-primary" aria-current="page">
+           About
+         </li>
+       </ol>
+     </nav>
+   </div>
+ </div>
+<!-- Page Header End -->
+
+ {% comment %} <!-- About Start -->
+ <div class="container-xxl about my-5 " >
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <div
+            class="h-100 d-flex align-items-center justify-content-center"
+            style="min-height: 300px"
+          >
+            <button
+              type="button"
+              class="btn-play"
+              data-bs-toggle="modal"
+              data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+              data-bs-target="#videoModal"
+            >
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
+          <div class="bg-white rounded-top p-5 mt-lg-5">
+            <p class="fs-5 fw-medium text-primary">About Us</p>
+            <h1 class="display-6 mb-4">
+              The Best School in Sukosari District
+            </h1>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+              Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+              sed stet lorem sit clita duo justo
+            </p>
+            <div class="row g-5 pt-2 mb-5">
+              <div class="col-sm-6">
+                <img
+                  class="img-fluid mb-4"
+                  src="{% static 'sd/img/icon/icon-5.png' %}"
+                  alt=""
+                />
+                <h5 class="mb-3">Managed Services</h5>
+                <span>Staff and Employees Who Are Ready to Help</span>
+              </div>
+              <div class="col-sm-6">
+                <img
+                  class="img-fluid mb-4"
+                  src="{% static 'sd/img/icon/icon-2.png' %}"
+                  alt=""
+                />
+                <h5 class="mb-3">Teachers</h5>
+                <span
+                  >Teachers Who Are Knowledgeable in Scientific Fields</span
+                >
+              </div>
+            </div>
+            <a
+              class="btn btn-primary rounded-pill py-3 px-5"
+              href=""
+              >Explore More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+ 
+  <!-- Video Modal Start -->
+  <div
+    class="modal modal-video fade"
+    id="videoModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">
+            PROFILE SDN SUKOSARI 1
+          </h3>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <!-- 16:9 aspect ratio -->
+          <div class="ratio ratio-16x9">
+            <!-- <iframe  src="https://youtu.be/PnddxEQmmqU?feature=shared" id="video" allowfullscreen
+                      allowscriptaccess="always" allow="autoplay"></iframe> -->
+            <iframe
+              class="embed-responsive-item"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/PnddxEQmmqU?si=9MPWoIm2IqTp96k9"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              id="video"
+              allowscriptaccess="always"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Modal End --> {% endcomment %}
+    
+
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive card w-100 container">
+              <h2 align='center' style="margin-top: 23px;margin-bottom: 19px;font-weight: bold;">Informasi Lengkap</h2>
+                <table class="table table-striped card-body mt-3">
+                    <tbody>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                        <span class="dashicons dashicons-admin-network"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 30 30">
+                            <path d="M 18.5 3 C 13.806 3 10 6.806 10 11.5 C 10 12.542294 10.19765 13.536204 10.541016 14.458984 L 3 22 L 3 27 L 8 27 L 8 24 L 11 24 L 11 21 L 14 21 L 15.541016 19.458984 C 16.463796 19.80235 17.457706 20 18.5 20 C 23.194 20 27 16.194 27 11.5 C 27 6.806 23.194 3 18.5 3 z M 20.5 7 C 21.881 7 23 8.119 23 9.5 C 23 10.881 21.881 12 20.5 12 C 19.119 12 18 10.881 18 9.5 C 18 8.119 19.119 7 20.5 7 z"></path>
+                        </svg></span>
+                        <b>NPSN</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">20521587</td>
+                    </tr>
+                    <tr>
+                        <th  class="bg-info bg-opacity-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 30 30">
+                                <path d="M 18.5 3 C 13.806 3 10 6.806 10 11.5 C 10 12.542294 10.19765 13.536204 10.541016 14.458984 L 3 22 L 3 27 L 8 27 L 8 24 L 11 24 L 11 21 L 14 21 L 15.541016 19.458984 C 16.463796 19.80235 17.457706 20 18.5 20 C 23.194 20 27 16.194 27 11.5 C 27 6.806 23.194 3 18.5 3 z M 20.5 7 C 21.881 7 23 8.119 23 9.5 C 23 10.881 21.881 12 20.5 12 C 19.119 12 18 10.881 18 9.5 C 18 8.119 19.119 7 20.5 7 z"></path>
+                            </svg>
+                        <b>Tingkatan Sekolah</b>
+                        </th>
+                        <td style="font-weight: 500;">SD</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                            <img width="23" height="23" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADXElEQVR4nO2ZTWgTQRTHN7WK9RNT487/P5tUCqJEVLCo6EEoePITVPSgB+tVBRUR9KQVRAQRsYJKrx71IILiByraSosHL1I8CEIVi1qjh1IptZEns7CHxu42nUmEPHjJMpndeb/Mm/dm3npeTWpSE6fS1NQ0Uym1k+RNkq9JfgHwi+QLz/Pqvf9A6kkeB/CNZLGEHvCqWXK5HAB0/QMgqgNmpq4opTZ61SK+7y8i2RcTYjztBbC60hx1AB6VAfFXAQzLuvIqJSQPlgsRgZGAsL4SHPUA+qcKxGhfS0vLdKcUJLdPMUSobU5BANyzAQLgqTMI3/dnAxixNCOjABY6ASG5yRJE0egeJyAAztoEAdDuCuSu5Rm57QrknWWQXusQEuctLvSi0ffWQQDkLEMUARSsg5Dc4ABkxDqIUmqXbRCSReuHMK31MRcg6XR6nlUQkpddgARBoG2D3HEBAmCZVRAAb1yA0ObZRPxWNnWOQNqsgQA46QiiSPKZTZCCQ5Ci7/uLbYGUXWiIqwAee56XsgJCspHkLcvrZADAaalYeo5qWXtJ3jB1qXJc7ifJlwDOaa1b8/n8DOsAMeA6EwDcJ5n1qkxS8hEEQQPJtzEgPgu4Vy2SzWYZfgPYIdda61Wm2FYK4rec+U3f1vBZQRCscG3/NDFaXEMq78aINIBBrXUQY2N5PuKKHyKVfIlU3QD2WV0nzc3N8wGcksEjIXJYfgMwy7Q9F1BxNZIPxgmp3WZ7njJrZEjulwg1TuRqlyg5lQwy6KES7z3GzPqok2tj7Bm5KZPJKHnJE4EohAmO5AnT9sP0nVMilxQAHJXnl0XQ2Ng41/xzJReuLHDpK7Nj2kbD9x4kt4aAWuvd0hYEwdrImf+rtOVyuQUTBIeHkz6fmGpiz0QRSIwwRl8F8Mn8k/2hWwDoAHA9dE8pLJg+HwFcknalVCZGpu8RmxKDALgWJx8opdZEbktprVcCOKyU2m9moCGcNUmiAI5In+j2Q2u9Ls5YADoSQZBcGrpEjIcXTCLcFhocR0zOkYp+Z4KdwZjWeklsEAAXE2ToqA4BeCIlVa31Ft/3l4tviyql8lrrzfKb9JG+kxzjQhKQV5McxLoC6EoC8r2KQQZjg0hiq7TBLK2SdGtSk5p4yeQPNRf1Um8JLS0AAAAASUVORK5CYII=">
+                        <b>Kepala Sekolah</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">Yayuk Sri Pengasih</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">
+                        <img width="22" height="22" src="data:image/png;base64,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">
+                        <b>Operator</b>
+                        </th>
+                        <td style="font-weight: 500;">Adi Kurniawan</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAYAAADjVADoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAET0lEQVR4nO2bTYgcRRTHn1mDH0QPu+mZ+v+rx0XZSBSEhJHgQRDUgwENfoBH9eJHEEw0koCHyIqBKAqK4EUFExPxLuJXombVgwZRMPEQouZbDSgumhjRZOVJD7TN7GxXdU91r+kfPBhmut97/e/qqupXNSINDQ0NDQ3zhm63u1BNzhbiOL7AGLMSwNMk3yN5EMCfJGfUks8Hk9+eMsbcpOfI/wWSywG8QnK6d9EONp2cu0zmK8aYKwC8RfKMhwBZOwPgTQBLZR5xLoAn0s2+LFOfACY1htSZKIoMyY/LFqCPTbVarbbUkXa7fSmAfQFE6Nl31tolUiestTHJAwFF6D0qR4wx41IHxsbGLiL5TWgRUrYniqJFdRgeX6tQhF7LeKNqEe6sWoSeGWNur0SEKIoW6TNa8E7uJ/mAWvK5iK9DAC4MLgTJdQXv4u8kOyl/neS7ImKsDSpCt9tdCOBowaSfzfoF8ExBn0eCTrZI3lIw4T86nQ77TcgAnCzYV6wMKcT2go/FCwN8P1/Q99ZQOpxD8kfPlnCK5N5035AljmML4EuSJzxjHAuiAsnLHZL6kORqkjckM8AFrjNWa+31xpj7AezMGzeO4wkZNiRX5UzoI9cLn4MFAHbkjH2zDBtr7cM5k1lXdmwAa3K2xDUybEg+nlOI7WXHBrAlZ+yNMmxIbnbovB4sKy6Aex2qXZulRi1iJimxFZ7tAbiP5GmHuMNvEQDWegxrjxaI95Br3VPPkRqNGjMZW+UaS2eJnrGCjBpLPJO70TWWMeY6n1itVusyCTSz/ME1uXa73XINBGCxaxx9GdQcJQQktzkm+FOBWE6iA3i13Kst8e0TwPviicNs8l/TpUIJvIhz1EGILQMKvxvV9HO/Y/Rt0iHOYREZGfrVpyH5iEOC+ycmJs7rnTs+Pn5+MlU/njruuH6nv6WP0/WLWg2bWbQ+6Fiz/ITk3QA26J0bdFeTVqLHfurg/0BaxKAYY+5w7dWHaM7zlFIh+XrVIszWBwUv65PcU6EIX1VSxp+tvEby+wqE0F03l0idADAZWoigFeu8U2EAv1bwWOyUOkHyuQr7iNukRhtETlUlBMlvK5s/pNEl+QpF6LWKx6RKjDFX++6a03eV9PJeslHsmKcYv/VbQgwGgA88E59K1QxGMrWOqbov9f0HLYd5JnxaW9IAv8sdC7XpQvG1EpgRkl97CvHSXM5Jvuzp+4uSV9cGQ/Iez0Sndek/535Nny3LM9bauyQUcKwa9QzAeocY6z1j7JBQ0KFqNFtxZi70WM99VVtDv2TtSoa/3SQ3aeld92APEOJW1zh6zgB/k0nMJ0l+nuSyS3OTqrHWXlP2OwHJd/v5jON4hdSYEQA/Z5L+O47jq3wdGmOuJPlXRthfghdpi655AHhRCqI+MuJuk7pDsgPgsyThd0ZHRy8u6lN9kHw78bm7dsWYOSh9v+NZ9Se4hoaGhgapL/8AsdwTdW4sRSQAAAAASUVORK5CYII=">
+                            <b>Akreditasi</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">B</td>
+                    </tr>
+                    <tr >
+                        <th class="bg-info bg-opacity-25">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAECUlEQVR4nO2ZS4gcVRSG70REiQ90hq6q77/V3aItiAouRhCDG6MY0Ii7iPhYiIhGQ1AXIm40ujBghCQQdKGGqCC+IviAKPhYqAgiIj6JCzdqQozRBFSMmZZDKjBpuypdM13V1Z364Gzqce89p07dex7O1dTU1NTU1NTU1NTUlEQQBGEURTcBDyRyo11zE84S7/01knZIOiSp2yN2bYc9Y8+6SWFmZuY04HZJ3/RRuq8APwD3t1qtM9240mw2z5H0GPDboIr3kf2Snoqi6Hw3LgCXAS9J+ncRivfKHPCupGudc1OuanQ6nZMkrZb07RCVThObY3Wj0TjVVQlg1twV+LMEI5j8kcx3Xtm6TgFL026GYRjY0Sbpx5IMYafH65KuKNzNvfe3AF9KOmDW995flPHKEklXFrAfpArwPbA2DMNThqZ4EAShpPXA3pSJP5S0anZ29sS0Mbz35wJPLPJEyGMIW+v6RQdXwApg34CT/gw8HMexzxhvKXAb8HlJhtgHXLUg5eM49omr5534IPCy9/7yrCNL0qWSngP+LtgQB7I+SirAuiFM/rWku6anp09Pm6fVagF8XLAnrHN5kbR9iIvYD2wJw/DCfnN5768u2Au25zYAsLWgxXzQu2kCawr2gK0L8YDrC17UT8AG4Engr4I9YFVuAzjnTkji7+6Yyzumy0IM4CzelrTZdvYKKJJXbM2bh5IzNBqNCHhI0p4KKJYpwO+SNgItV2A4/EUFFf/OwuCsPKWI7G/biH+PQ8AblnOMrE7QbDZlvwfwa4mKWyq8MQzDs1xV6BydLY5PtldwWezgkNy8euUwSS9Y5TaO4+m0Z4IgODspjO4touJjOYZVnIFnXdmQJDBJFLctLc437CxOSuNfDeDmO82w7Xb7jKz6gu0BR7JVW4srG/6fwc0N0NiwctqK5PTYNe/dX+ya3ctw8/mNlbkeo1XCAN2er7g2Kw022u32ybZ5Zj2TuLmd7zsz5nvflQ2D5fDW2NhkLpt3/MTNNyVjHGue513ZkK+IYTv5W5JWZn3xpL+wMnm2X/8wTW6tugG683d3K5kBjwB3J/KoXUt2/rzj7bb+4zgZoDvkltkNpStfEQNYr+E+NyoYrQHsN7puZMqnGSCJ+I46owuQ1wrJ9YdkgA1RFF2cpKh5dvFjiY31tqRlriqQYoAj960Z4b2/B/gE+GeBDZaPJD0YRVHbVYyppOnRa4Bn0iI+7/0l1tcHHgeelvQq8J5FccCbwIvWP5R0h/d++UiOtkGxwCNtZw7D8AI36ehwMpPmune6SYfDxY40A9zrJh1qA3Dce8CWtF8giqKb3aQjaVlKoGNVnhl3POC9Xy7pFUmfAZ9aDBDHcWfU66qpqampqXED8x/oCgMBgWegCgAAAABJRU5ErkJggg==">
+                        <b>Kurikulum</b>
+                        </th>
+                        <td style="font-weight: 500;">SD 2013</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                            <img width="21" height="21" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADo0lEQVR4nO2ZS2sUQRDHO/jG+878/zNJUPcg8YWsCoqiXnL14GcQj168mqgXY0K8KclZUBR8RCWXfITFByQGInjwInmsEQM+8tqR2u02wyLs7EzPZFYsKFimZ3v619VdVV2t1H/5B8TzPB/AHdd1L6t2FMdxdpO8BWCZZABgRrWbeJ53nuQnASC5TvKB53mHTXuxWNzhed45ADdIPiM5DWARwIqAy2+S76VN3pF35T9ZMnSQ7Ce5piHKruseN40kj5IcBfBVt0dWDToifaRKUCqVtpG8b6wgM6mU2iJtnucdITlOstoqwF+0CuCV7/uHUoEA8EJ/aAlArzzv7u7eKRud5KoFgEZdBTBkc8l1hCwxD6AkD33fLwJ4mwJA45J709nZuS8xBcm+kCVqELIvBCptCG7onOu6x5J6pzW9J3pDEEtxBhSanDgwS2Yi48SJmovVG7u2nJJYIiFIIJYpFAp7WwKRYKf/XBbvpDd2oj1hASQg+TqyA9Bph0TsdRMnAAwnXeuWQAIAg5FAtEuVPzwMxYnVHIGsRIozkgBK7mTSDh3sgryAsA7zMpJVGtKOat5ASFZlpbQCMmrpw7ZBAgB3I0GId4iTAGYI8qWnp2d71IAY5BWEdZgzTUH0eSLXICT7m4KQfN4GIE+igEy3AchUlKVVsfVBABOhficsgixEAakVFmxo+Ewhvy1O0K9MQSR/M/2Ky5RMNkuQisUlMC4wcmyWvh3HOWgJZiHzza51TiAswkxl7n5DOm+yVwD7AXxO1f3CckBMyTJ9TUGkApgiiBXLADgdNWlcTBnmj2Ukm20RomKcR5TlNZIySA0GwL3U0njbByvLWg0drDpUFJFabA4GHjRYY8xMNIAPAC41BZENmVJ9Ny7EiuM4BzTIU/1sKKpVhjYbgBs6IGNyXfesXvbfC4WCEwlEPJgUx3IAUZax6HxtSj+7ploRnbVaSfZi6qzjOHsaam8zsa4epCoet4idUL+FbgMu6guhZd/3T7QM0QCTpWVmDYREcgA/tDWuqKSil1kWe6ZslhPJUybTkACqbIlOYQbFHdoGQL3PAbP+AVwQ76TbHpn7S6sicUZqsRYvQ8dMnFBKbSV5O9T3aCoQYZGUQUwuFcAYFqhI7hSu55I8CeCdfkcC8lWVpYiPlwoggOty8CE5qQe6rFWO0JO6rV82cDiL1RPyOGSFj7I/VLuJxAbWrfQTwE3f93epdhR9PzPc1dWFzR7Lf1EW5DdsIEjVxKL/LgAAAABJRU5ErkJggg==">
+                            <b>Jam Belajar</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">Pagi/6 hari</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 64 64"
+                            style="fill:#1A1A1A;">
+                            <path d="M 32 3 L 1 28 L 1.4921875 28.654297 C 2.8591875 30.477297 5.4694688 30.791703 7.2304688 29.345703 L 32 9 L 56.769531 29.345703 C 58.530531 30.791703 61.140812 30.477297 62.507812 28.654297 L 63 28 L 54 20.742188 L 54 8 L 45 8 L 45 13.484375 L 32 3 z M 32 13 L 8 32 L 8 56 L 56 56 L 56 35 L 32 13 z M 26 34 L 38 34 L 38 52 L 26 52 L 26 34 z"></path>
+                            </svg>
+                        <b>Luas Tanah</b>
+                        </th>
+                        <td style="font-weight: 500;">3,520 m<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                            <img width="24" height="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEklEQVR4nO2awW9NQRTGT0WVRNPw3Pfm++a2T54noQsVjxARCwkLCytEsLKxKht7lRAbJF1UIrGTkBALrBuRlNY/IJSFsKEU1aJdtGTybpOmaZn73m3dmd5fMss7ueebMzNnzjkiGRkZGRkZGbVQLBZXkjwK4BHJMQDPwjDU4jsAKiS7SX4i+XvmAPC8vb19hfgGgE0AugC8mW30HCJcEV/QWu8k2fcvo2eNKZKHxAdXB/AzpvHTXjCslCqKywB4UIvxM0Tor1QqjeIqAL7WI0AkwlVZygLQ5fMAwN0EBHD3PNBa70tCAJfjgwaSL5ISgeR5cQ0AnQl6Qb+4RqlUajFxfkIiXBIXAXAtAeOflMvlJnGRIAgUyR91uP7Ltra2NeIyqN0LhlpbWzeI64RhuNbc5zFX/hfJ3eILJM/FEGBKKXVSfKJcLjfZ5AOi1b8uPqK1PmgpwKBJmYmPkLxtKUKX+EihUMgD+GwhwLjWukN8BMAJ2xggCILV4iMkb1mKcEd8JJfLNQN4bSlCp/iIUmoHgAkLESa11kfER0iesvSCCQD7xUcA9FhGiCMAtomHLAfQaynCKIAD4hskcyYCtNwO46awGmd+k1MkeRnAgAmyUllzKBQK6wG8t/SESQBnbOY1+QQAj2eJOJDKbLPWeiPJD7YvRwD3TOptvvny+XxpvuQsgG9a68OSNrTWHQC+xBDhFcmtc8yzi+RHi+JLd+rS7gD2mFM/hgjmmrww/YokeSxKqth+35+6LYFqM8WQrRGRIYMmnxCt7O+Y3w6nrhSHanPFu7jG1DHStyUK1dvB6opMapgtkaqeJVbjhN5FFuGppDBi7FlEEb5LGlFKnbZ8RdbrAQ8l5T1IgwspQOqf4LlcrpnkjQUSYCQMw1XiAgCO2yRaY46b4lr5jQl6g1Jqr7hafIFlBeov462ILBNXqVQqjQDO1tqpBuCi+ACAdVFpPlZ/glJqs/hEEAQqEmLUQoA+8ZVSqdQSNW7N1702ppTaLkuABtPHaJo5zRM4egbf11pv+d8/lpGRkZGRIW7wB8/0LBLkw6SzAAAAAElFTkSuQmCC">
+                        <b>Telepon</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;"><a href="tel:"></a></td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8UlEQVR4nO2YTQ6CMBSEZ8UlxOsK3sfgHq4CXGOMSRdGGm2F/jpf8pZN3teZJgRAlA0jTzCqEwkNJeKIEvGEqpYjqpYnVLUcUbU8oaoFoAFwBbAm+KbynQVAb3be0GewID2ns4mUkATfZv30wEqbDakXqlrkBuAEoAUwlCzSvux3lgjSJzKYVJ5p3EtOhA4jEWaQApUI0t88lQg8buFgGCsRieScyHTAg51qERlzEAkB9+yyFCgy2w53Eas1HSRysR1ujMwSQWTcKTIbCevvIBdiVysYVYtMP1Tr25thqSJjDiIhoET+NRFGmmBUIyIQmAev23gu+Sr0KAAAAABJRU5ErkJggg==">
+                        <b>Fax</b>
+                        </th>
+                        <td style="font-weight: 500;"></td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADCklEQVR4nO2bT4hNURzHP/OMhSJ/h7FgMP5shoXdlA1LJUoiZIgNHguzIAalxp9SLBRKE8meRi9No4gpG1mYwmBsZMaf/Hn+8wadOrdeL7f3zu++e865r/up7+Z17vn9eeece8/53QspKSkpKSkpKSkpNqgHWoDVQBbYq5XVv7XoNjXFOKANuA7kgb9lpNp062vGkmCmAicqDDpMn4DjQAMJIqOH9IcIgZfqPbADqMNzGoAbVQy8VDlgCp4yGxiIMfhAg8A8PGMuMGQh+ECvgGY8WuwGLQYf6JkP0yET85yvZE1QPjhjt8PgA+10Ffx0fZ92nYCPwDQXCTjtQfCBTtoOfjLwrQqOF7Si9vMVmJSUuf8E2A406QVMaZZ+0htIylpwT+DgH6CzzG5vNHBMtzXt/67N4V8QOLjfwEaHoP/fwAQssELg3C3DjYxqe1tgZzkWOCBwbKnAzjKBnX1YoMvQqbfAKIEddc07Q1sXsEC3xcWpz9DWNSxw09Cpngi2egxt9WKBnKFT/RFs9RvaUr7FzhVDp0aARuFeY8TQ1mUscESwOh8U2DkksKN8i521Asfy+tSoUuYLT5PXYIEZAseUHgEzK+hf7REeC20o36zwXOjga13wyITc97cAb4R9P8Uip4ROBlIHqBeBw1qXgOGIfarzCWssiehsHGrFMg89CDqQ8sU6WQ8CD6QOaJxUffMeBP/d9nFYMec8SMB5HNIE/HAY/C9dk3TKGYcJOIsHNAJfHAT/U58me8FRBwlQD2PeMN5yeXxI2/SK9RYTsAlP6bUQfJ/P7wotiPm2qBa+RXhOR4wJkJwsWadeWDsspwe6dpgImoHPVR76C0kYu6qYgHYSSJ1+Pzhq8DmfV/1yTAReRAh+WFhT8IpWvWszDb6gK8Q1wR5BAtR3BDVFl0HwV5M878MYA9yvcOh3Fn1NYqK2kHcRMnr/UNx2nYskq8rQyxgekoq1+T92t4W0XYUD5gB3YkyAql2WstVlLZEQFut/RjLUw7QyZFir3zboV/DUJzhKG9XU+AfA8Gbv7zvubwAAAABJRU5ErkJggg==">
+                        <b>Provinsi</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">
+                        <a
+                            href="https://sekolahloka.com/provinsi/prov-jawa-timur/"
+                            rel="tag"
+                            style="text-decoration: none;font-weight: 600;"
+                            >prov. Jawa Timur</a
+                        >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADCklEQVR4nO2bT4hNURzHP/OMhSJ/h7FgMP5shoXdlA1LJUoiZIgNHguzIAalxp9SLBRKE8meRi9No4gpG1mYwmBsZMaf/Hn+8wadOrdeL7f3zu++e865r/up7+Z17vn9eeece8/53QspKSkpKSkpKSkpNqgHWoDVQBbYq5XVv7XoNjXFOKANuA7kgb9lpNp062vGkmCmAicqDDpMn4DjQAMJIqOH9IcIgZfqPbADqMNzGoAbVQy8VDlgCp4yGxiIMfhAg8A8PGMuMGQh+ECvgGY8WuwGLQYf6JkP0yET85yvZE1QPjhjt8PgA+10Ffx0fZ92nYCPwDQXCTjtQfCBTtoOfjLwrQqOF7Si9vMVmJSUuf8E2A406QVMaZZ+0htIylpwT+DgH6CzzG5vNHBMtzXt/67N4V8QOLjfwEaHoP/fwAQssELg3C3DjYxqe1tgZzkWOCBwbKnAzjKBnX1YoMvQqbfAKIEddc07Q1sXsEC3xcWpz9DWNSxw09Cpngi2egxt9WKBnKFT/RFs9RvaUr7FzhVDp0aARuFeY8TQ1mUscESwOh8U2DkksKN8i521Asfy+tSoUuYLT5PXYIEZAseUHgEzK+hf7REeC20o36zwXOjga13wyITc97cAb4R9P8Uip4ROBlIHqBeBw1qXgOGIfarzCWssiehsHGrFMg89CDqQ8sU6WQ8CD6QOaJxUffMeBP/d9nFYMec8SMB5HNIE/HAY/C9dk3TKGYcJOIsHNAJfHAT/U58me8FRBwlQD2PeMN5yeXxI2/SK9RYTsAlP6bUQfJ/P7wotiPm2qBa+RXhOR4wJkJwsWadeWDsspwe6dpgImoHPVR76C0kYu6qYgHYSSJ1+Pzhq8DmfV/1yTAReRAh+WFhT8IpWvWszDb6gK8Q1wR5BAtR3BDVFl0HwV5M878MYA9yvcOh3Fn1NYqK2kHcRMnr/UNx2nYskq8rQyxgekoq1+T92t4W0XYUD5gB3YkyAql2WstVlLZEQFut/RjLUw7QyZFir3zboV/DUJzhKG9XU+AfA8Gbv7zvubwAAAABJRU5ErkJggg==">
+                            <b>Kota/Kabupaten</b>
+                        </th>
+                        <td style="font-weight: 500;">
+                        <a 
+                            href="https://sekolahloka.com/kota/kab-bondowoso/" 
+                            rel="tag"
+                            style="text-decoration: none;font-weight: 500;"
+                            >kab. Bondowoso</a
+                        >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADCklEQVR4nO2bT4hNURzHP/OMhSJ/h7FgMP5shoXdlA1LJUoiZIgNHguzIAalxp9SLBRKE8meRi9No4gpG1mYwmBsZMaf/Hn+8wadOrdeL7f3zu++e865r/up7+Z17vn9eeece8/53QspKSkpKSkpKSkpNqgHWoDVQBbYq5XVv7XoNjXFOKANuA7kgb9lpNp062vGkmCmAicqDDpMn4DjQAMJIqOH9IcIgZfqPbADqMNzGoAbVQy8VDlgCp4yGxiIMfhAg8A8PGMuMGQh+ECvgGY8WuwGLQYf6JkP0yET85yvZE1QPjhjt8PgA+10Ffx0fZ92nYCPwDQXCTjtQfCBTtoOfjLwrQqOF7Si9vMVmJSUuf8E2A406QVMaZZ+0htIylpwT+DgH6CzzG5vNHBMtzXt/67N4V8QOLjfwEaHoP/fwAQssELg3C3DjYxqe1tgZzkWOCBwbKnAzjKBnX1YoMvQqbfAKIEddc07Q1sXsEC3xcWpz9DWNSxw09Cpngi2egxt9WKBnKFT/RFs9RvaUr7FzhVDp0aARuFeY8TQ1mUscESwOh8U2DkksKN8i521Asfy+tSoUuYLT5PXYIEZAseUHgEzK+hf7REeC20o36zwXOjga13wyITc97cAb4R9P8Uip4ROBlIHqBeBw1qXgOGIfarzCWssiehsHGrFMg89CDqQ8sU6WQ8CD6QOaJxUffMeBP/d9nFYMec8SMB5HNIE/HAY/C9dk3TKGYcJOIsHNAJfHAT/U58me8FRBwlQD2PeMN5yeXxI2/SK9RYTsAlP6bUQfJ/P7wotiPm2qBa+RXhOR4wJkJwsWadeWDsspwe6dpgImoHPVR76C0kYu6qYgHYSSJ1+Pzhq8DmfV/1yTAReRAh+WFhT8IpWvWszDb6gK8Q1wR5BAtR3BDVFl0HwV5M878MYA9yvcOh3Fn1NYqK2kHcRMnr/UNx2nYskq8rQyxgekoq1+T92t4W0XYUD5gB3YkyAql2WstVlLZEQFut/RjLUw7QyZFir3zboV/DUJzhKG9XU+AfA8Gbv7zvubwAAAABJRU5ErkJggg==">
+                            <b>Kecamatan</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">
+                        <a
+                            href="https://sekolahloka.com/kecamatan/kec-sukosari/"
+                            rel="tag"
+                            style="text-decoration: none;font-weight: 500;"
+                            >kec. Sukosari</a
+                        >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADCklEQVR4nO2bT4hNURzHP/OMhSJ/h7FgMP5shoXdlA1LJUoiZIgNHguzIAalxp9SLBRKE8meRi9No4gpG1mYwmBsZMaf/Hn+8wadOrdeL7f3zu++e865r/up7+Z17vn9eeece8/53QspKSkpKSkpKSkpNqgHWoDVQBbYq5XVv7XoNjXFOKANuA7kgb9lpNp062vGkmCmAicqDDpMn4DjQAMJIqOH9IcIgZfqPbADqMNzGoAbVQy8VDlgCp4yGxiIMfhAg8A8PGMuMGQh+ECvgGY8WuwGLQYf6JkP0yET85yvZE1QPjhjt8PgA+10Ffx0fZ92nYCPwDQXCTjtQfCBTtoOfjLwrQqOF7Si9vMVmJSUuf8E2A406QVMaZZ+0htIylpwT+DgH6CzzG5vNHBMtzXt/67N4V8QOLjfwEaHoP/fwAQssELg3C3DjYxqe1tgZzkWOCBwbKnAzjKBnX1YoMvQqbfAKIEddc07Q1sXsEC3xcWpz9DWNSxw09Cpngi2egxt9WKBnKFT/RFs9RvaUr7FzhVDp0aARuFeY8TQ1mUscESwOh8U2DkksKN8i521Asfy+tSoUuYLT5PXYIEZAseUHgEzK+hf7REeC20o36zwXOjga13wyITc97cAb4R9P8Uip4ROBlIHqBeBw1qXgOGIfarzCWssiehsHGrFMg89CDqQ8sU6WQ8CD6QOaJxUffMeBP/d9nFYMec8SMB5HNIE/HAY/C9dk3TKGYcJOIsHNAJfHAT/U58me8FRBwlQD2PeMN5yeXxI2/SK9RYTsAlP6bUQfJ/P7wotiPm2qBa+RXhOR4wJkJwsWadeWDsspwe6dpgImoHPVR76C0kYu6qYgHYSSJ1+Pzhq8DmfV/1yTAReRAh+WFhT8IpWvWszDb6gK8Q1wR5BAtR3BDVFl0HwV5M878MYA9yvcOh3Fn1NYqK2kHcRMnr/UNx2nYskq8rQyxgekoq1+T92t4W0XYUD5gB3YkyAql2WstVlLZEQFut/RjLUw7QyZFir3zboV/DUJzhKG9XU+AfA8Gbv7zvubwAAAABJRU5ErkJggg==">
+                          <b>Kelurahan</b>
+                        </th>
+                        <td style="font-weight: 500;">
+                        <a
+                            href="https://sekolahloka.com/kelurahan/sukosari-lor/"
+                            rel="tag"
+                            style="text-decoration: none;font-weight: 500;"
+                            >sukosari Lor</a
+                        >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">
+                            <img width="22" height="22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7klEQVR4nO2ZzWvUQBjGU7/Aj5tkk+dJVvRWFjztf6Li0X9A9FJBpILf4Oe5XlrxJFJyqOBJPHnxIL2o1K/q9lIP/ReWXXnZCEuYsdlsMrPF94GBskxmnuc3bybJNAhUKpVKpVKpVCqVSqUqpTAMYwCXASwBWAPwxlNbyz1carVaUeBCYRgeI7lBcjhjbUO8OYGQJEkK4PsMhP7belEUnQxcimSb5Kbv8AB+iJemw54nuVD8HcAJkj89AtgUDwa/C0mSnKsNAIDX+YSLFgg+KmEriqJTpvB5ZbyqDQDJ32MTX5+BSrCFvzJ2a2zXlf8AyX7hvrtW7CSGxJivDU88Ffr1xfvU6VutVmQxsmiB0Gsw/C9TePFi6l/Lu0G7LZu91dANh3tCz1T2AK7arhHvTQMYkrxvgpA/nryFdwlgaIIgz+aaXpaMZQ/g5m7XugQwJPmg7jdGAN9kDEP4W2Wudw1gCOCh6cOJ5Ocq4dM0TQzhb5cdwzkAjow/sjxJSkMA8NUS/s4kXrwA4CjAYwuETyWu/WIyDuDupD68AeAoyBMLhI+Thid5r4oHrwBIDpMkuWCCAGDdEH7d9OIiY1Sd3zeArNvtHjSNGUXRUQDP81fsvvwN4Iipr4whY+01AJktfEXtB/BirwDIDOH3kbyYpunh3eaTPtJXrpm2EnwAyAzh5wA8ze/z9//6QCF5nOS7vO+zIoRJK8E1gMy08gBWCpvddhzHZwTMOKQ4js8Wzh2k78o0leASQFYmfKFtyUlTftpkPUeYBoIrAJml7JcqbJ6lIZS5HVwAyJoOPw2EpgFkrsJXhVALgHD0NVf2nl9uKvwYhOWye4J4nxpAp9M5RHLgc+UrVsJAvAd1iOSO75WvUAk7QV0CsDoLKz9JJQB4WRuANE1Pz8rKl60E8Rw0qDmfK1+yEv6P8HQNIRkdUIw/FWalDUwHMI0IwLz8U0I2GgBvSX7w0WTu3IN4mXcSXqVSqVQqlUqlUqlUwd7XH9IKW5iwC3OdAAAAAElFTkSuQmCC">
+                            <b>Email</b>
+                        </th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">
+                        <a
+                        style="text-decoration: none;font-weight: 500;"
+                            href="javascript:;"
+                            data-enc-email="fqa.fhxbfnev1[at]tznvy.pbz"
+                            target="_blank"
+                            rel="nofollow"
+                            class="mail-link"
+                            data-wpel-link="ignore"
+                            >sdn.sukosari1@gmail.com</a
+                        >
+                        </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <ul>
+                    <li>
+                      <label for="">Sumber :</label>
+                      <a href="https://sekolahloka.com/data/uptd-spf-sd-negeri-sukosari-1-kec-sukosari/" target="_blank" rel="noopener noreferrer">https://sekolahloka.com/data/uptd-spf-sd-negeri-sukosari-1-kec-sukosari/</a>
+                    </li>
+                  </ul>
+            </div>
+            <span>&nbsp;</span>
+        </div>
+            <div class="col">
+                <div class="card table-responsivecard w-100">
+                    <h3 class="card-title mt-4 container " align="center" style="font-weight: bolder;">Dokumen dan Perizinan</h3>
+                <div class="card-body">
+                <table class="table-detail table table-striped card-body mt-3">
+                    <tbody>
+                    <tr >
+                        <th class="bg-primary bg-opacity-50">Naungan</th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">Kementerian Pendidikan dan Kebudayaan</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">No. SK. Pendirian</th>
+                        <td style="font-weight: 500;">01</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">Tanggal. SK. Pendirian</th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">1926-01-01</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">No. SK. Operasional</th>
+                        <td style="font-weight: 500;">Perbup No. 34 Tahun 2018</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">Tanggal SK. Operasional</th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">2018-04-16</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">File SK Operasional</th>
+                        <td style="font-weight: 500;">259009-791144-119880-90464299-1994388821.pdf</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">Akreditasi</th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">B</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">No. SK. Akreditasi</th>
+                        <td style="font-weight: 500;">556/BAN-SM/SK/2019</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-primary bg-opacity-50">Tanggal SK. Akreditasi</th>
+                        <td style="background-color: #dbdbdb;font-weight: 500;">25-06-2019</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-info bg-opacity-25">No. Sertifikasi ISO</th>
+                        <td style="font-weight: 500;">Belum Bersertifikat</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <ul>
+                  <li>
+                    <label for="">Sumber :</label>
+                    <a href="https://data.sekolah-kita.net/sekolah/UPTD%20SPF%20SD%20Negeri%20Sukosari%201%20Kec.%20Sukosari_98137" target="_blank" rel="noopener noreferrer">data.sekolah-kita.net</a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  {% endblock content %}
+    

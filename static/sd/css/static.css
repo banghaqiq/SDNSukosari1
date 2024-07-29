@@ -1,0 +1,13 @@
+.stc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.charts{
+    padding: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}

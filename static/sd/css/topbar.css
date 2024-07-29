@@ -1,0 +1,36 @@
+.topbar{
+    display: block;
+    gap: 1px!important;
+    
+}
+@media screen and (max-width: 768px){
+    .topbar{
+        display: none;
+    }
+    #hdr{
+        /* font-size: 2.5em !important; */
+        font-weight: 400;
+        font-size: medium ;
+        margin: 2px !important;
+    }
+}
+@media screen and (max-width: 810px){
+    .topbar{
+        display: none;
+    }
+    #hdr{
+        /* font-size: 2.5em !important; */
+        font-weight: 300;
+        font-size: xx-large ;
+    }
+}
+@media screen and (max-width: 412px){
+    .topbar{
+        display: none;
+    }
+    #hdr{
+        /* font-size: 2.5em !important; */
+        font-weight: 1500;
+        font-size: x-large ;
+    }
+}

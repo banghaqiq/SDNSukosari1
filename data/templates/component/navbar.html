@@ -1,0 +1,63 @@
+<div class="container-fluid bg-white sticky-top">
+ <div class="container">
+   <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+     <a href="index.html" class="navbar-brand d-lg-none">
+       <h1 class="fw-bold m-0">SDN SUKOSARI 1</h1>
+     </a>
+     <button
+       type="button"
+       class="navbar-toggler me-0"
+       data-bs-toggle="collapse"
+       data-bs-target="#navbarCollapse"
+     >
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+       <div class="navbar-nav">
+         <a href="{% url 'home' %}" class="nav-item nav-link {% if menu == 'home' %} active {% endif %}">Beranda</a>
+         <div class="nav-item dropdown">
+           <a href="#" class="nav-link dropdown-toggle {% if menu == 'about' %} active {% endif %}" data-bs-toggle="dropdown">Tentang</a>
+           <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+             <a href="{% url 'profile' %}" class="dropdown-item">Profil</a>
+             <a href="{% url 'visimisi' %}" class="dropdown-item">Visi Misi | Sejarah</a>
+             <a href="{% url 'struktur' %}" class="dropdown-item">Struktur</a>
+             <a href="{% url 'dataguru' %}" class="dropdown-item">Data Guru | Tendik</a>
+             <a href="{% url 'developer' %}" class="dropdown-item">Developer</a>
+            </div>
+          </div>
+         <div class="nav-item dropdown">
+           <a href="#" class="nav-link dropdown-toggle {% if menu == '' %} active {% endif %}" data-bs-toggle="dropdown">Prestasi</a>
+           <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+             <a href="{% url 'kecamatan' %}" class="dropdown-item">Kecamatan</a>
+             <a href="{% url 'kabupaten' %}" class="dropdown-item">Kabupaten</a>
+             <a href="{% url 'provinsi' %}" class="dropdown-item">Provinsi</a>
+             <a href="{% url 'nasional' %}" class="dropdown-item">Nasional</a>
+            </div>
+          </div>
+         <div class="nav-item dropdown">
+           <a href="#" class="nav-link dropdown-toggle {% if menu == 'performance' %} active {% endif %}" data-bs-toggle="dropdown">Kegiatan</a>
+           <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+             <a href="{% url 'penampilan' %}" class="dropdown-item">Penampilan</a>
+             <a href="{% url 'drumband' %}" class="dropdown-item">Drum Band</a>
+             <a href="{% url 'keagamaan' %}" class="dropdown-item">Keagamaan</a>
+             <a href="{% url 'classmeating' %}" class="dropdown-item">Class Meating</a>
+             <a href="{% url 'studytour' %}" class="dropdown-item">Study tour</a>
+            </div>
+          </div>
+         <div class="nav-item dropdown">
+           <a href="#" class="nav-link dropdown-toggle {% if menu == '' %} active {% endif %}" data-bs-toggle="dropdown">Informasi</a>
+           <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+             <a href="{% url 'berita' %}" class="dropdown-item">Berita</a>
+             <a href="{% url 'pengumuman' %}" class="dropdown-item">Pengumuman</a>
+             <a href="{% url 'extra' %}" class="dropdown-item">Extrakulikuler</a>
+            </div>
+          </div>
+          {% comment %} <a href="{% url 'performance' %}" class="nav-item nav-link {% if menu == 'performance' %} active {% endif %}">Performance</a> {% endcomment %}
+          {% comment %} <a href="" class="nav-item nav-link {% if menu == '' %} active {% endif %}">Prestasi</a> {% endcomment %}
+         <a href="{% url 'testimonial' %}" class="nav-item nav-link {% if menu == 'testimonial' %} active {% endif %}">Alumni</a>
+         <a href="{% url 'contact' %}" class="nav-item nav-link {% if menu == 'contact' %} active {% endif %}">Contact</a>
+       </div>
+     </div>
+   </nav>
+ </div>
+</div>

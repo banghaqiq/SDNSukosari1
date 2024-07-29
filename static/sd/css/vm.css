@@ -1,0 +1,27 @@
+.logosd{
+    width: 450px;
+    height: 450px;
+    display:block;
+}
+
+@media screen and (max-width: 768px){
+    .logosd{
+        display: block;
+        width: 425px;
+        height: 425px;
+    }
+}
+@media screen and (max-width: 810px){
+    .logosd{
+        display: block;
+        width: 425px;
+        height: 425px;
+    }
+}
+@media screen and (max-width: 412px){
+    .logosd{
+        display: block;
+        width: 425px;
+        height: 425px;
+    }
+}

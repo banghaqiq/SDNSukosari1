@@ -1,0 +1,82 @@
+{% extends "layout/core.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+      <h1 class="display-2 text-white mb-4 animated slideInDown fw-semibold">Kabupaten</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item" ><a href="{% url 'home' %}" style="text-decoration: none;">Home</a></li>
+          <li class="breadcrumb-item text-primary" aria-current="page">Prestasi</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+<!-- Project Start -->
+<div class="container-xxl pt-5">
+
+    <div class="container">
+      <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+            <p class="fs-3 fw-medium text-primary">Juara se-Kabupaten</p>
+              <h6 class="display-5 mb-5 fs-4 fw-semibold">Para pemenang lomba yang diadakan se-kabupaten</h6>
+      </div>
+      <br />
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="project-item mb-5 ">
+          <div class="position-relative">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Cr5bYOAmRok?si=p84tNCUPZ2Bvmkai" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  style="border-radius: 15px;"></iframe>
+          </div>
+          <div class="p-4">
+            <ul d-block>
+              <li>Lomba</li>
+            </ul>
+            <a class="d-block h5" href="" style="text-decoration: none;">Lomba FLS2N </a>
+            <span>JUARA 2 FLS2N TINGKAT KAB. BONDOWOSO JENJANG SD 2023 "MARS INDONESIA MANDIRI" OLEH ALI ZAIDAN ASSAIFULLAH</span>
+          </div>
+        </div>
+        <div class="project-item mb-5 ">
+          <div class="position-relative">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qvjPTks2Th4?si=VInQ17ZayKJOU8zu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  style="border-radius: 15px;"></iframe> 
+          </div>
+          <div class="p-4">
+            <ul d-block>
+              <li>Lomba</li>
+            </ul>
+            <a class="d-block h5" href="" style="text-decoration: none;">Lomba FLS2N</a>
+            <span>JUARA 2 FLS2N TINGKAT KAB. BONDOWOSO JENJANG SD 2023 "KEBYAR-KEBYAR" OLEH ALI ZAIDAN ASSAIFULLAH</span>
+          </div>
+        </div>
+        <div class="project-item mb-5 ">
+          <div class="position-relative">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/PS2A8K55zrw?si=fr-J8_hHjZaVmDez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 15px;"></iframe>
+          </div>
+          <div class="p-4">
+            <ul d-block>
+              <li>Lomba</li>
+            </ul>
+            <a class="d-block h5" href="" style="text-decoration: none;">Lomba FLS2N</a>
+            <span>JUARA 2 FLS2N TINGKAT KAB. BONDOWOSO JENJANG SD 2023 "TANDUK MAJENG" OLEH ALI ZAIDAN ASSAIFULLAH</span>
+          </div>
+        </div>
+        <div class="project-item mb-5 ">
+          <div class="position-relative">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/_i5Os9zgc7E?si=T8Z1TlXVsOHcIB8m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 15px;"></iframe>
+          </div>
+          <div class="p-4">
+            <ul d-block>
+              <li>Lomba</li>
+            </ul>
+            <a class="d-block h5" href="" style="text-decoration: none;">Lomba Menyanyi</a>
+            <span>JUARA 1 LOMBA MENYANYI JENJANG SD SE-KAB. BONDOWOSO DALAM RANGKA MEMPERINGATI HUT RI YANG KE-78 OLEH ALI ZAIDAN ASSAIFULLAH</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project End -->
+
+  {% endblock content %}
